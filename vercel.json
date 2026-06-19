@@ -5,7 +5,7 @@
       "src": "datacheck-pro/frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "datacheck-pro/frontend/dist"
+        "distDir": "datacheck-pro/frontend"
       }
     },
     {
@@ -20,9 +20,9 @@
     },
     {
       "src": "/(.*)",
-      "dest": "datacheck-pro/frontend/dist/index.html"
+      "dest": "datacheck-pro/frontend"
     }
   ],
-  "outputDirectory": "datacheck-pro/frontend/dist"
+  "outputDirectory": "datacheck-pro/frontend"
 }
 
