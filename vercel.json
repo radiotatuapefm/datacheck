@@ -20,8 +20,9 @@
     },
     {
       "src": "/(.*)",
-      "dest": "datacheck-pro/frontend/dist/$1"
+      "dest": "datacheck-pro/frontend/dist/index.html"
     }
-  ]
+  ],
+  "outputDirectory": "datacheck-pro/frontend/dist"
 }
 
