@@ -2,25 +2,25 @@
   "version": 2,
   "builds": [
     {
-      "src": "datacheck-pro/frontend/package.json",
+      "src": "client/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "datacheck-pro/frontend/dist"
+        "distDir": "dist"
       }
     },
     {
-      "src": "datacheck-pro/backend/server/_core/index.ts",
+      "src": "server/_core/index.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "datacheck-pro/backend/server/_core/index.ts"
+      "dest": "server/_core/index.ts"
     },
     {
       "src": "/(.*)",
-      "dest": "datacheck-pro/frontend/dist/$1"
+      "dest": "dist/index.html"
     }
   ]
 }
